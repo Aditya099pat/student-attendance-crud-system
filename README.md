@@ -37,6 +37,28 @@ This project demonstrates how a frontend application communicates with a backend
 
 ### Database
 - MySQL
+  
+## Database Tables
+
+```sql
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    roll_no VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    department VARCHAR(100),
+    year INT
+);
+
+CREATE TABLE attendance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    date DATE NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    FOREIGN KEY (student_id) REFERENCES students(id)
+);
+```
+  
 
 ## Project Structure
 
