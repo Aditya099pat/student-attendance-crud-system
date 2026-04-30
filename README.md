@@ -6,6 +6,16 @@ A full-stack DBMS project that connects a React frontend with a MySQL database t
 
 This project demonstrates how a frontend application communicates with a backend server and performs database operations using REST APIs. The backend handles API requests, executes SQL queries, and updates the MySQL database based on user actions performed from the frontend.
 
+## Screenshots
+
+### Student Management Page
+
+![Student Management Page](./screenshots/students-page.png)
+
+### Attendance Management Page
+
+![Attendance Management Page](./screenshots/attendance-page.png)
+
 ## Features
 
 - Add new student records
